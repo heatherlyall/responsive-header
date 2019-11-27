@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 *, *::before, *::after {
@@ -23,11 +23,12 @@ body {
 
 header {
   background-color: #18294f;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
-h1 {
+header h1 {
   text-align: center;
   color: #fff;
   display: block;
@@ -40,8 +41,6 @@ h1 {
 }
 
  li {
-
-  display: inline-block;
   margin: .9rem;
   padding: .5em .75em;
   border-radius: 3px;
@@ -50,17 +49,59 @@ h1 {
   list-style-type: none;
 }
 
-ul {
+nav ul {
   text-align: center;
 }
 
-a {
+nav a {
   color: #6c8fe0;
   text-decoration: none;
   text-align: center;
+  white-space: nowrap;
 }
 
-a:hover {
+nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  nav ul {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
