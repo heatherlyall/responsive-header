@@ -36,7 +36,7 @@ header h1 {
   margin: 0;
 }
 
- li {
+li {
   border-radius: 3px;
   background-color: #18294f;
   color: #6c8fe0;
@@ -83,6 +83,10 @@ nav a:hover {
     justify-content: center;
   }
 
+  nav li {
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -103,7 +107,7 @@ nav a:hover {
   }
 
   nav li {
-    width: 50%;
+    width: 25%;
   }
 
 }
@@ -120,12 +124,14 @@ nav a:hover {
     margin: 0 0 1.5rem;
   }
 
-  nav ul {
+  header {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav li {
+    display: block;
     width: 25%;
   }
 
